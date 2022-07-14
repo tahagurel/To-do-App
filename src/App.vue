@@ -74,6 +74,11 @@ body{
   border-radius: 5px;
   padding: 10px 20px 0 20px;
 }
+@media only screen and (max-width: 600px) {
+  .box{
+    width: 310px;
+  }
+}
 .inputWrapper{
   display: flex;
   justify-content: space-between;
