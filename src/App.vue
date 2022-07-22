@@ -4,7 +4,7 @@
     <h1>Todo App</h1>
     <div class="inputWrapper">
       <input v-model="todo" class="inputBox" placeholder="Add your new todo" type="text">
-      <button :disabled="todo==''" class="addButton" @click="addToDoList">+</button>
+      <button :disabled="todo.length==0" class="addButton" @click="addToDoList">+</button>
     </div>
     <div class="doList">
       <div  v-for="(item,index) in todoList"
